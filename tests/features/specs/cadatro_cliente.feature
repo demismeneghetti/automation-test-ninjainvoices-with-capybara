@@ -6,7 +6,8 @@ Funcionalidade: Cadastro de clientes
     Posso cadastrar um novo cliente
     Para gerencia-lo e lançar faturas e cobranças
 
-Cenario: Uma só vez
+
+Cenario: Usuario Logado
     * usuario logado acessa cadastro de clientes
 
 Esquema do Cenario: Cadastrar novo cliente
@@ -16,7 +17,8 @@ Esquema do Cenario: Cadastrar novo cliente
   Então esse cliente é cadastrado no sistema
   
   Exemplos:
-  | tipo    |
-  | "Prime" |
-  | "Gold"  |
-
+  | tipo        |
+  | "Prime"     |
+  | "Gold"      |
+  | "Exclusivo" |
+  | "Platinum"  |
