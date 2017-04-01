@@ -1,8 +1,8 @@
 # encoding: utf-8
 
 Dado(/^que eu tenho um usuário com o seguintes atributos:$/) do |table|
-  puts @user = table.hashes[0]['Usuario']
-  puts @password = table.hashes[0]['Senha']
+  @user = table.hashes[0]['Usuario']
+  @password = table.hashes[0]['Senha']
 end
 
 Dado(/^que eu tenho um "([^"]*)" e "([^"]*)"$/) do |user, pwd|
