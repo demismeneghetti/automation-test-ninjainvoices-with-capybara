@@ -1,3 +1,3 @@
 class DashboardPage < SitePrism::Page
-    element :page_title, "#page_title"
+    element :mensagem_boas_vindas, "#page_title"
 end
