@@ -14,7 +14,6 @@ Esquema do Cenario: Login sem sucesso
       | "padrekevedo@noexiste.com"  | "secret"   | "User not found [403]"              | 
       | "kato.danaz#qaninja.com.br" | "secret"   | "Please enter your e-mail address." |
 
-
 Cenario: Login com sucesso
   Dado que eu tenho um usuário com o seguintes atributos:
       | Usuario                   | Senha  | 
