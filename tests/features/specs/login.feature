@@ -3,9 +3,7 @@
 @login  
 Funcionalidade: Login
 
-@invalid
 Esquema do Cenario: Login sem sucesso
-  
   Dado que eu tenho um <Usuario> e <Senha>
   Quando faço Login
   Então vejo a seguinte mensagem <Mensagem_de_erro>
@@ -16,7 +14,7 @@ Esquema do Cenario: Login sem sucesso
       | "padrekevedo@noexiste.com"  | "secret"   | "User not found [403]"              | 
       | "kato.danaz#qaninja.com.br" | "secret"   | "Please enter your e-mail address." |
 
-@logout @success
+
 Cenario: Login com sucesso
   Dado que eu tenho um usuário com o seguintes atributos:
       | Usuario                   | Senha  | 
@@ -26,4 +24,3 @@ Cenario: Login com sucesso
     """
     Bem Vindo Kato Danzo!
     """
-
