@@ -1,6 +1,6 @@
 Dado(/^que eu tenho um usuário com o seguintes atributos:$/) do |table|
-  @user = table.hashes[0]['Usuario']
-  @pass = table.hashes[0]['Senha']
+  puts @user = table.hashes[0]['Usuario']
+  puts @pass = table.hashes[0]['Senha']
 end
 
 Dado(/^que eu tenho um "([^"]*)" e "([^"]*)"$/) do |user, pass|
@@ -17,9 +17,9 @@ Quando(/^faço Login$/) do
     @login.with(@user, @pass)
 end
 
-Então(/^vejo a seguinte mensagem no dashboard:$/) do |mmessage|
+Então(/^vejo a seguinte mensagem no dashboard:$/) do |message|
     @dash = DashboardPage.new
-    expect(@dash.page_title.text).to eq mmessage
+    expect(@dash.mensagem_boas_vindas.text).to eq message
 end
 
 Então(/^vejo a seguinte mensagem "([^"]*)"$/) do |alert|
